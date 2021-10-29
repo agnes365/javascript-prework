@@ -1,5 +1,4 @@
-var argButtonName, buttonPapper, buttonRock, buttonScissors, buttonTest;
-
+var argButtonName;
 /**
  * Describe this function...
  */
@@ -52,10 +51,10 @@ computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 }
-buttonRock = document.getElementById('button-rock');
+const buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
-buttonPapper = document.getElementById('button-paper');
+const buttonPapper = document.getElementById('button-paper');
 buttonPapper.addEventListener('click', function(){ buttonClicked('papier'); });
-buttonScissors = document.getElementById('button-scissors');
+const buttonScissors = document.getElementById('button-scissors');
 buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
 
