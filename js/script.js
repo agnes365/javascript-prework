@@ -1,7 +1,7 @@
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
-  var playerMove, randomNumber, playerInput;
+  var randomNumber, playerInput;
 
   /**
    * Describe this function...
@@ -39,7 +39,7 @@ function buttonClicked(argButtonName) {
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
   }
 
-  playerMove = argButtonName;
+  const playerMove = argButtonName;
   console.log('wybór ruchu gracza to: ' + playerInput);
   console.log('ruch gracza to: ' + playerMove);
   randomNumber = Math.floor(Math.random() * 3 + 1);
